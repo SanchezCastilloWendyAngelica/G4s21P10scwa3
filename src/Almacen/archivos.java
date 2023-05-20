@@ -26,11 +26,16 @@ public class archivos {
     List<Datos> contenido = new ArrayList<>();
     public List<Datos> Leer(){
         String linea;
+        Datos datos;
         try {
             FileReader archivo = new FileReader("Datos.txt");
             BufferedReader br = new BufferedReader(archivo);
         
             while((linea = br.readLine())!= null){
+                datos = new Datos();
+                Convertir convertir = new Convertir();
+                datos = convertir.aclase(linea);
+                contenido.add(datos);
                 System.out.println("valor de linea = " + linea);
             }
         } catch (FileNotFoundException ex) {
@@ -38,7 +43,7 @@ public class archivos {
         } catch (IOException ex) {
            ex.printStackTrace();
         }
-        return null;
+        return contenido;
     }
     
     public boolean Grabar(Datos cadena){

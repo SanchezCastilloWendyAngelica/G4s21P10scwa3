@@ -1,1 +1,5 @@
 {"nombre":"Wendy Sanchez","edad":20,"correo":"sanchezwendy854@gmail.com"}
+{"nombre":"wendy","edad":20,"correo":"personal@personal.com"}
+{"nombre":"we","edad":34,"correo":"sdfsdd"}
+{"nombre":"prueba1","edad":13,"correo":"prueba1@gmail.com"}
+{"nombre":"melody ortiz","edad":15,"correo":"melody@gmail.com"}
